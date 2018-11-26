@@ -1,0 +1,6 @@
+{
+	"eslint.enable": false,
+	"flow.enabled": false,
+	"javascript.validate.enable": true,
+	"typescript.tsdk": "node_modules/typescript/lib"
+}

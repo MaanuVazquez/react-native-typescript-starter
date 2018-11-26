@@ -1,0 +1,71 @@
+{
+  "name": "react-native-typescript-starter",
+  "main": "node_modules/expo/AppEntry.js",
+  "private": true,
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "eject": "expo eject",
+    "test": "node ./node_modules/jest/bin/jest.js --watchAll"
+  },
+  "jest": {
+    "preset": "jest-expo",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json"
+    ],
+    "transform": {
+      "^.+\\.(js|jsx)$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx)$",
+    "testPathIgnorePatterns": [
+      "\\.snap$",
+      "<rootDir>/node_modules"
+    ],
+    "setupFiles": [
+      "./tests/setup.js"
+    ],
+    "globals": {
+      "ts-jest": {
+        "tsConfigFile": "tsconfig.test.json"
+      }
+    },
+    "cacheDirectory": "./.jest/cache"
+  },
+  "dependencies": {
+    "@expo/samples": "2.1.1",
+    "expo": "^31.0.2",
+    "react": "16.5.0",
+    "react-dom": "^16.6.3",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-31.0.0.tar.gz",
+    "react-navigation": "^2.18.2"
+  },
+  "devDependencies": {
+    "@types/enzyme": "^3.1.15",
+    "@types/expo": "^31.0.0",
+    "@types/expo__vector-icons": "^6.2.3",
+    "@types/jest": "^23.3.9",
+    "@types/react": "^16.7.6",
+    "@types/react-native": "^0.57.13",
+    "@types/react-navigation": "^2.13.4",
+    "@types/react-test-renderer": "^16.0.3",
+    "babel-preset-expo": "^5.0.0",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.7.0",
+    "jest": "^23.6.0",
+    "jest-expo": "^31.0.0",
+    "jest-fetch-mock": "^1.7.5",
+    "prettier": "^1.15.2",
+    "ts-jest": "^23.10.5",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.16.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.1.6"
+  }
+}
