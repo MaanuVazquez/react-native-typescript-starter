@@ -1,27 +1,27 @@
 {
-	"extends": ["tslint:recommended", "tslint-config-prettier", "tslint-plugin-prettier"],
-	"rules": {
-		"no-console": false,
-		"variable-name": false,
-		"object-literal-sort-keys": false,
-		"array-type": [true, "array"],
-		"curly": true,
-		"prettier": [
-			true,
-			{
-				"useTabs": false,
-				"printWidth": 120,
-				"tabWidth": 2,
-				"singleQuote": true,
-				"trailingComma": "none",
-				"semi": false,
-				"arrowParens": "avoid",
-				"bracketSpacing": false
-			}
-		],
-		"interface-name": [true, "never-prefix"]
-	},
-	"linterOptions": {
-		"exclude": ["node_modules/**/*.ts"]
-	}
+  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier", "tslint-plugin-prettier"],
+  "rules": {
+    "no-console": false,
+    "variable-name": false,
+    "object-literal-sort-keys": false,
+    "array-type": [true, "array"],
+    "curly": true,
+    "prettier": [
+      true,
+      {
+        "useTabs": false,
+        "printWidth": 120,
+        "tabWidth": 2,
+        "singleQuote": true,
+        "trailingComma": "none",
+        "semi": false,
+        "arrowParens": "avoid",
+        "bracketSpacing": false
+      }
+    ],
+    "interface-name": [true, "never-prefix"]
+  },
+  "linterOptions": {
+    "exclude": ["node_modules/**/*.ts"]
+  }
 }

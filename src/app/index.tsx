@@ -16,8 +16,8 @@ export default class App extends React.Component<Props, State> {
     isLoadingComplete: false
   }
 
-  public _loadResourcesAsync = (): any => {
-    return Promise.all([
+  public _loadResourcesAsync = async () => {
+    await Promise.all([
       Asset.loadAsync([require('../../assets/images/robot-dev.png'), require('../../assets/images/robot-prod.png')]),
       Font.loadAsync({
         'space-mono': require('../../assets/fonts/SpaceMono-Regular.ttf')
